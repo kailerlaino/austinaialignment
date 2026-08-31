@@ -1,6 +1,10 @@
 import { organizers } from "@/lib/data";
 
 export function Organizers() {
+  const maxRoleLines = Math.max(
+    ...organizers.map((organizer) => organizer.role.split("\n").length),
+  );
+
   return (
     <section className="bg-offwhite px-6 py-16 sm:px-14 sm:py-16">
       <div className="mx-auto w-full max-w-[1180px]">
@@ -10,34 +14,46 @@ export function Organizers() {
               Talk to an organizer
             </h2>
             <div className="font-newsreader text-[15px] leading-[1.5] text-body-muted">
-              Twenty minutes, no commitment, no application required.
+              Fifteen minutes, no commitment, no application required.
             </div>
           </div>
-          <div className="mt-7 flex flex-wrap gap-6">
-            {organizers.map((organizer) => (
-              <a
-                key={`${organizer.name}-${organizer.role}`}
-                href={organizer.bookingUrl}
-                className="flex items-center gap-3.5"
-                aria-label={`Chat with ${organizer.name}`}
-              >
+          <div className="mt-7 flex flex-wrap gap-10">
+            {organizers.map((organizer) => {
+              const lines = organizer.role.split("\n");
+              const roleLines = [
+                ...lines,
+                ...Array(maxRoleLines - lines.length).fill(""),
+              ];
+
+              return (
                 <div
-                  className="h-14 w-14 flex-none rounded-full"
-                  style={{
-                    backgroundImage:
-                      "repeating-linear-gradient(135deg, #f0dcc2 0 5px, #f7ece0 5px 10px)",
-                  }}
-                />
-                <div>
-                  <div className="font-newsreader text-[15.5px] leading-[1.3] font-medium text-ink">
+                  key={`${organizer.name}-${organizer.role}`}
+                  className="flex w-[200px] flex-col"
+                >
+                  <img
+                    src={organizer.photoUrl}
+                    alt={organizer.name}
+                    className="h-28 w-28 rounded-full object-cover"
+                  />
+                  <div className="font-newsreader mt-4 text-[15.5px] leading-[1.3] font-medium text-ink">
                     {organizer.name}
                   </div>
                   <div className="font-chivo-mono mt-[3px] text-[12px] leading-[1.4] text-label-muted">
-                    {organizer.role}
+                    {roleLines.map((line, index) => (
+                      <div key={index} className={line === "" ? "min-h-[1.4em]" : undefined}>
+                        {line}
+                      </div>
+                    ))}
                   </div>
+                  <a
+                    href={organizer.bookingUrl}
+                    className="font-newsreader mt-3 inline-block border-b border-tint-underline pb-[3px] text-[15px] leading-none text-burnt"
+                  >
+                    Book a time
+                  </a>
                 </div>
-              </a>
-            ))}
+              );
+            })}
           </div>
         </div>
       </div>

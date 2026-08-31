@@ -13,7 +13,7 @@ export function NavBar() {
           </span>
         </Link>
         <nav className="hidden items-center sm:flex" style={{ gap: "26px" }}>
-          <Link href="/mission" className="font-newsreader text-[14.5px] leading-none text-nav-link">
+          {/* <Link href="/mission" className="font-newsreader text-[14.5px] leading-none text-nav-link">
             Mission
           </Link>
           <Link href="/fellowships" className="font-newsreader text-[14.5px] leading-none text-nav-link">
@@ -21,7 +21,7 @@ export function NavBar() {
           </Link>
           <Link href="/members" className="font-newsreader text-[14.5px] leading-none text-nav-link">
             Members
-          </Link>
+          </Link> */}
           <a
             href={slackInviteUrl}
             className="font-chivo-mono rounded-[2px] bg-burnt px-4 py-[10px] text-[13px] leading-none font-medium tracking-[.02em] text-white transition-colors hover:bg-burnt-dark"

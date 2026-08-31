@@ -9,15 +9,11 @@ export function Hero() {
     >
       <div className="mx-auto w-full max-w-[1180px] px-6 sm:px-14">
         <div className="max-w-[52ch]">
-          <div className="font-chivo-mono mb-[22px] text-[11px] leading-none font-medium tracking-[.14em] text-tint-eyebrow">
-            A STUDENT ORGANIZATION AT THE UNIVERSITY OF TEXAS
-          </div>
           <h1
             className="font-newsreader mb-6 text-[32px] leading-[1.28] font-normal text-white sm:text-[42px]"
             style={{ textWrap: "pretty" }}
           >
-            Capabilities are compounding faster than our ability to govern
-            them.
+            Capabilities are growing faster than our ability to control them. 
             <sup className="font-newsreader text-[15px] leading-none font-normal text-tint-eyebrow">
               1
             </sup>
@@ -33,12 +29,12 @@ export function Hero() {
             >
               JOIN OUR SLACK →
             </a>
-            <a
+            {/* <a
               href="/fellowships"
               className="font-newsreader border-b border-white/50 pb-[3px] text-[16px] leading-none text-white"
             >
               Read the curriculum
-            </a>
+            </a> */}
           </div>
         </div>
         <CapabilityChartPlaceholder />

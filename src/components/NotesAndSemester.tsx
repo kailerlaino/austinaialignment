@@ -25,8 +25,9 @@ export function NotesAndSemester() {
               THIS SEMESTER
             </div>
             <div className="font-newsreader text-[16px] leading-[1.6] text-body">
-              Fellowship applications open each semester. Slack gets the
-              announcement first.
+              <p>- We believe AI can go very well or very poorly, we want to make sure it goes well.</p>
+              <p>- Weekly GMs are open to everyone, no dues or application required.</p>
+              <p>- We run two intro fellowships open to all majors, applications open at the start of each semester.</p>
             </div>
           </div>
         </div>

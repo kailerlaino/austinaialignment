@@ -38,12 +38,12 @@ export function Fellowships() {
                     {line}
                   </div>
                 ))}
-                <a
+                {/* <a
                   href={fellowship.syllabusUrl}
                   className="font-newsreader mt-1.5 border-b border-tint-underline pb-[3px] text-[15px] leading-none text-burnt"
                 >
                   Syllabus →
-                </a>
+                </a> */}
               </div>
             </div>
           ))}
