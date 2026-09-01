@@ -1,5 +1,6 @@
 import { slackInviteUrl } from "@/lib/data";
 import { CapabilityChartPlaceholder } from "./CapabilityChartPlaceholder";
+import { RotatingWord } from "./RotatingWord";
 
 export function Hero() {
   return (
@@ -13,7 +14,7 @@ export function Hero() {
             className="font-newsreader mb-6 text-[32px] leading-[1.28] font-normal text-white sm:text-[42px]"
             style={{ textWrap: "pretty" }}
           >
-            Capabilities are growing faster than our ability to control them. 
+            Capabilities are growing faster than our ability to <RotatingWord /> them.
             <sup className="font-newsreader text-[15px] leading-none font-normal text-tint-eyebrow">
               1
             </sup>

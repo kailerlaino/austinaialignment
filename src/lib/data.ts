@@ -40,13 +40,13 @@ export const organizers: Organizer[] = [
     name: "Aarushi Lakhi",
     role: "PRESIDENT \nTECHNICAL CO-LEAD",
     photoUrl: "/organizers/aarushi-lakhi.jpg",
-    bookingUrl: "#",
+    bookingUrl: "https://calendly.com/aarushi-lakhi/30min?back=1",
   },
   {
     name: "Kailer Laino",
     role: "TECHNICAL CO-LEAD",
     photoUrl: "/organizers/kailer-laino.jpg",
-    bookingUrl: "#",
+    bookingUrl: "https://calendar.app.google/WyLChdhGLtXLFDRy7",
   },
 ];
 
