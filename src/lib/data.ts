@@ -48,6 +48,24 @@ export const organizers: Organizer[] = [
     photoUrl: "/organizers/kailer-laino.jpg",
     bookingUrl: "https://calendar.app.google/WyLChdhGLtXLFDRy7",
   },
+  {
+    name: "Tarun Dasari",
+    role: "OUTREACH LEAD \nGOVERNANCE CO-LEAD",
+    photoUrl: "/organizers/tarun-dasari.jpg",
+    bookingUrl: "https://cal.com/tarun-dasari-ur7ibb/15min",
+  },
+  {
+    name: "Feifan Liu",
+    role: "GOVERNANCE CO-LEAD",
+    photoUrl: "/organizers/feifan-liu.jpg",
+    bookingUrl: "https://calendly.com/feifan-liu-utexas/30min",
+  },
+  {
+    name: "John Dunbar",
+    role: "TECHNICAL CO-LEAD",
+    photoUrl: "/organizers/john-dunbar.jpg",
+    bookingUrl: "https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ2cQrNL4xHCtaU0PjJO4wwtlFUEiMEcFz0QAg4-1A3N884Eh6hNiDqv5_bfA9SRZVwj1ezALK5a",
+  },
 ];
 
 export const slackInviteUrl = "https://join.slack.com/t/austinaialignment/shared_invite/zt-48uudtl0g-xg8AEDJi5I0jAHU~WcOniw";

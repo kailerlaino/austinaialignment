@@ -14,7 +14,7 @@ export function Organizers() {
               Talk to an organizer
             </h2>
             <div className="font-newsreader text-[15px] leading-[1.5] text-body-muted">
-              Fifteen minutes, no commitment, no application required.
+              Fifteen minutes, no application required.
             </div>
           </div>
           <div className="mt-7 flex flex-wrap gap-10">
