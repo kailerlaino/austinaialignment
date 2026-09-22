@@ -1,3 +1,19 @@
+export interface GeneralMeeting {
+  title: string;
+  date: string;
+  videoEmbedUrl: string;
+  slidesUrl: string;
+}
+
+export const generalMeetings: GeneralMeeting[] = [
+  {
+    title: "GM 1 — Why AI Safety?",
+    date: "September 15, 2026",
+    videoEmbedUrl: "https://www.youtube.com/embed/UKlMiBnk7Ug",
+    slidesUrl: "/slides/gm1-why-ai-safety.pdf",
+  },
+];
+
 export interface Fellowship {
   title: string;
   tag: string;
