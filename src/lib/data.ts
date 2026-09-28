@@ -12,6 +12,12 @@ export const generalMeetings: GeneralMeeting[] = [
     videoEmbedUrl: "https://www.youtube.com/embed/UKlMiBnk7Ug",
     slidesUrl: "/slides/gm1-why-ai-safety.pdf",
   },
+  {
+    title: "GM 2 — Sampling Safety",
+    date: "September 22, 2026",
+    videoEmbedUrl: "https://www.youtube.com/embed/xwErQuiwcO0",
+    slidesUrl: "/slides/gm2-sampling-safety.pdf",
+  },
 ];
 
 export interface Fellowship {
