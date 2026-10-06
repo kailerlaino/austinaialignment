@@ -6,7 +6,7 @@ export function Organizers() {
   );
 
   return (
-    <section className="bg-offwhite px-6 py-16 sm:px-14 sm:py-16">
+    <section id="members" className="bg-offwhite px-6 py-16 sm:px-14 sm:py-16">
       <div className="mx-auto w-full max-w-[1180px]">
         <div className="border-t border-ink pt-[34px]">
           <div className="mb-2 flex flex-col items-baseline gap-2 sm:flex-row sm:gap-5">

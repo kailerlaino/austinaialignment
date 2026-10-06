@@ -1,8 +1,9 @@
+import Link from "next/link";
 import { fellowships } from "@/lib/data";
 
 export function Fellowships() {
   return (
-    <section className="mt-14 border-t border-hairline bg-offwhite pt-14 sm:mt-[56px] sm:pt-[56px]">
+    <section id="fellowships" className="mt-14 border-t border-hairline bg-offwhite pt-14 sm:mt-[56px] sm:pt-[56px]">
       <div className="mx-auto w-full max-w-[1180px] px-6 sm:px-14">
         <div className="font-chivo-mono mb-7 text-[10.5px] leading-none font-medium tracking-[.14em] text-label-muted">
           FELLOWSHIPS
@@ -38,12 +39,14 @@ export function Fellowships() {
                     {line}
                   </div>
                 ))}
-                {/* <a
-                  href={fellowship.syllabusUrl}
-                  className="font-newsreader mt-1.5 border-b border-tint-underline pb-[3px] text-[15px] leading-none text-burnt"
-                >
-                  Syllabus →
-                </a> */}
+                {fellowship.syllabusUrl && (
+                  <Link
+                    href={fellowship.syllabusUrl}
+                    className="font-newsreader mt-1.5 border-b border-tint-underline pb-[3px] text-[15px] leading-none text-burnt"
+                  >
+                    Open curriculum →
+                  </Link>
+                )}
               </div>
             </div>
           ))}

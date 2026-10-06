@@ -5,6 +5,7 @@ import { RotatingWord } from "./RotatingWord";
 export function Hero() {
   return (
     <section
+      id="mission"
       className="pt-14 pb-8 sm:pt-[76px] sm:pb-12"
       style={{ background: "linear-gradient(180deg, #bf5700 0%, #a84c00 100%)" }}
     >
