@@ -28,23 +28,25 @@ export function GeneralMeetings() {
                     allowFullScreen
                   />
                 </div>
-                <div className="flex flex-col">
-                  <div className="aspect-video w-full overflow-hidden rounded-[2px] border border-hairline">
-                    <iframe
-                      src={gm.slidesUrl}
-                      title={`${gm.title} — slides`}
-                      className="h-full w-full"
-                    />
+                {gm.slidesUrl && (
+                  <div className="flex flex-col">
+                    <div className="aspect-video w-full overflow-hidden rounded-[2px] border border-hairline">
+                      <iframe
+                        src={gm.slidesUrl}
+                        title={`${gm.title} — slides`}
+                        className="h-full w-full"
+                      />
+                    </div>
+                    <a
+                      href={gm.slidesUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="font-newsreader mt-3 inline-block self-start border-b border-tint-underline pb-[3px] text-[14.5px] leading-none text-burnt"
+                    >
+                      View slides (PDF) →
+                    </a>
                   </div>
-                  <a
-                    href={gm.slidesUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="font-newsreader mt-3 inline-block self-start border-b border-tint-underline pb-[3px] text-[14.5px] leading-none text-burnt"
-                  >
-                    View slides (PDF) →
-                  </a>
-                </div>
+                )}
               </div>
             </div>
           ))}

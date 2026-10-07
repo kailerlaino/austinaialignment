@@ -2,7 +2,7 @@ export interface GeneralMeeting {
   title: string;
   date: string;
   videoEmbedUrl: string;
-  slidesUrl: string;
+  slidesUrl?: string;
 }
 
 export const generalMeetings: GeneralMeeting[] = [
@@ -17,6 +17,11 @@ export const generalMeetings: GeneralMeeting[] = [
     date: "September 22, 2026",
     videoEmbedUrl: "https://www.youtube.com/embed/xwErQuiwcO0",
     slidesUrl: "/slides/gm2-sampling-safety.pdf",
+  },
+  {
+    title: "GM 3",
+    date: "September 29, 2026",
+    videoEmbedUrl: "https://www.youtube.com/embed/fBP_F36uPsU",
   },
 ];
 
