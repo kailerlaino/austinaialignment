@@ -19,7 +19,7 @@ export const generalMeetings: GeneralMeeting[] = [
     slidesUrl: "/slides/gm2-sampling-safety.pdf",
   },
   {
-    title: "GM 3",
+    title: "GM 3 — Henry Castillo: SAE Pre-conditioning and Approaches to Research",
     date: "September 29, 2026",
     videoEmbedUrl: "https://www.youtube.com/embed/fBP_F36uPsU",
   },
