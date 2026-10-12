@@ -118,4 +118,14 @@ export const curriculum: CurriculumWeek[] = [
       { label: "Paul Christiano — What Failure Looks Like", url: "https://www.alignmentforum.org/posts/HBxe6wdjxK239zajf/what-failure-looks-like" },
     ],
   },
+  {
+    title: "Week 2",
+    // TODO: confirm the week title and summary.
+    summary:
+      "Inner alignment and mesa-optimizers, and Constitutional AI as an approach to training models to follow written principles.",
+    materials: [
+      { label: "Robert Miles — The OTHER AI Alignment Problem: Mesa-Optimizers and Inner Alignment", url: "https://www.youtube.com/watch?v=bJLcIBixGj8" },
+      { label: "Anthropic — Constitutional AI: Harmlessness from AI Feedback", url: "https://arxiv.org/html/2212.08073v1" },
+    ],
+  },
 ];
