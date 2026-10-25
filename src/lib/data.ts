@@ -102,7 +102,7 @@ export interface CurriculumWeek {
   title: string;
   summary: string;
   // Add { label, url } entries as materials go online.
-  materials: { label: string; url: string }[];
+  materials: { label: string; url: string; time?: string; optional?: boolean }[];
 }
 
 export const curriculum: CurriculumWeek[] = [
@@ -118,6 +118,30 @@ export const curriculum: CurriculumWeek[] = [
       { label: "METR — Recent Reward Hacking", url: "https://metr.org/blog/2025-06-05-recent-reward-hacking/" },
       { label: "AI In Context — If you remember one AI disaster, make it this one", url: "https://www.youtube.com/watch?v=r_9wkavYt4Y" },
       { label: "Paul Christiano — What Failure Looks Like", url: "https://www.alignmentforum.org/posts/HBxe6wdjxK239zajf/what-failure-looks-like" },
+    ],
+  },
+  {
+    title: "Week 2",
+    // TODO: confirm the week title and summary.
+    summary:
+      "Inner alignment and mesa-optimizers, and Constitutional AI as an approach to training models to follow written principles.",
+    materials: [
+      { label: "Robert Miles — The OTHER AI Alignment Problem: Mesa-Optimizers and Inner Alignment", url: "https://www.youtube.com/watch?v=bJLcIBixGj8" },
+      { label: "Anthropic — Constitutional AI: Harmlessness from AI Feedback", url: "https://arxiv.org/html/2212.08073v1" },
+    ],
+  },
+  {
+    title: "Week 3",
+    // TODO: confirm the week title and summary.
+    summary:
+      "How models are trained on human feedback, whether that feedback can scale to hard tasks, and evidence of models faking alignment or scheming.",
+    materials: [
+      { label: "A simple technical explanation of RLH(AI)F", url: "https://kairos.fm/simple-technical-rlhaif/", time: "~12 min" },
+      { label: "Can we scale human feedback for complex AI tasks?", url: "https://blog.bluedot.org/p/scalable-oversight-intro", time: "20-25 min" },
+      { label: "Alignment faking in large language models", url: "https://www.anthropic.com/research/alignment-faking", time: "15 min" },
+      { label: "Detecting and reducing scheming in AI models", url: "https://openai.com/index/detecting-and-reducing-scheming-in-ai-models/", time: "~10-12 min" },
+      { label: "Current AIs seem pretty misaligned to me", url: "https://blog.redwoodresearch.org/p/current-ais-seem-pretty-misaligned", optional: true },
+      { label: "The anti-scheming paper", url: "https://antischeming.ai", optional: true },
     ],
   },
 ];

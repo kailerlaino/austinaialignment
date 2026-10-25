@@ -49,6 +49,11 @@ export default function CurriculumPage() {
                       >
                         {m.label}
                       </a>
+                      {(m.time || m.optional) && (
+                        <span className="font-chivo-mono ml-2 text-[11px] tracking-[.06em] text-label-muted">
+                          {m.optional ? "OPTIONAL" : m.time}
+                        </span>
+                      )}
                     </li>
                   ))}
                 </ul>
