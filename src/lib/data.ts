@@ -83,7 +83,7 @@ export const organizers: Organizer[] = [
   {
     name: "Feifan Liu",
     role: "GOVERNANCE CO-LEAD",
-    photoUrl: "/organizers/feifan-liu.jpg",
+    photoUrl: "/organizers/feifan-liu.jpg?v=2",
     bookingUrl: "https://calendly.com/feifan-liu-utexas/30min",
   },
   {
@@ -95,6 +95,8 @@ export const organizers: Organizer[] = [
 ];
 
 export const slackInviteUrl = "https://join.slack.com/t/austinaialignment/shared_invite/zt-48uudtl0g-xg8AEDJi5I0jAHU~WcOniw";
+
+export const blogUrl = "https://austinaialignment.substack.com/";
 
 export interface CurriculumWeek {
   title: string;

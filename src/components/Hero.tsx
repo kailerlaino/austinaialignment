@@ -1,4 +1,4 @@
-import { slackInviteUrl } from "@/lib/data";
+import { blogUrl, slackInviteUrl } from "@/lib/data";
 import { CapabilityChartPlaceholder } from "./CapabilityChartPlaceholder";
 import { RotatingWord } from "./RotatingWord";
 
@@ -30,6 +30,12 @@ export function Hero() {
               className="font-chivo-mono rounded-[2px] bg-white px-[22px] py-[14px] text-[14px] leading-none font-medium tracking-[.02em] text-burnt transition-colors hover:bg-tint-body"
             >
               JOIN OUR SLACK →
+            </a>
+            <a
+              href={blogUrl}
+              className="font-chivo-mono rounded-[2px] border border-white px-[22px] py-[13px] text-[14px] leading-none font-medium tracking-[.02em] text-white transition-colors hover:bg-white/10"
+            >
+              READ OUR BLOG →
             </a>
             {/* <a
               href="/fellowships"
