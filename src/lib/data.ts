@@ -144,4 +144,19 @@ export const curriculum: CurriculumWeek[] = [
       { label: "The anti-scheming paper", url: "https://antischeming.ai", optional: true },
     ],
   },
+  {
+    title: "Week 4",
+    // TODO: confirm the week number, title and summary.
+    summary:
+      "An introduction to machine learning: neural networks and backpropagation, plus optional background on supervised, self-supervised and reinforcement learning, and transformers.",
+    materials: [
+      { label: "3Blue1Brown — Neural Networks, Chapters 1–6", url: "https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&feature=shared", time: "2 hours" },
+      { label: "Richard Ngo — A Short Introduction to Machine Learning", url: "https://www.alignmentforum.org/posts/qE73pqxAZmeACsAdF/a-short-introduction-to-machine-learning", optional: true },
+      { label: "Maini and Sabri — Machine Learning for Humans, Part 2.1: Supervised Learning", url: "https://medium.com/@v_maini/supervised-learning-740383a2feab", optional: true },
+      { label: "CodeBasics — What Is Self-Supervised Learning?", url: "https://youtu.be/sJzuNAisXHA", optional: true },
+      { label: "Hado van Hasselt — Introduction to Reinforcement Learning (watch 2:00–1:02:10)", url: "https://www.youtube.com/watch?v=TCCjZe0y4Qc&t=2m0s", time: "60 min", optional: true },
+      { label: "Andrej Karpathy — The Spelled-Out Intro to Neural Networks and Backpropagation: Building Micrograd", url: "https://youtu.be/VMj-3S1tku0", time: "150 min", optional: true },
+      { label: "Brandon Rohrer — Transformers from Scratch", url: "https://e2eml.school/transformers.html", optional: true },
+    ],
+  },
 ];
