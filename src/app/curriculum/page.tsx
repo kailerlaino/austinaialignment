@@ -40,7 +40,7 @@ export default function CurriculumPage() {
                 </p>
                 <ul className="flex flex-col gap-1.5">
                   {week.materials.map((m) => (
-                    <li key={m.url}>
+                    <li key={m.url} className={m.note ? "pb-1.5" : undefined}>
                       <a
                         href={m.url}
                         target="_blank"
@@ -53,6 +53,11 @@ export default function CurriculumPage() {
                         <span className="font-chivo-mono ml-2 text-[11px] tracking-[.06em] text-label-muted">
                           {[m.optional && "OPTIONAL", m.time].filter(Boolean).join(" · ")}
                         </span>
+                      )}
+                      {m.note && (
+                        <div className="font-newsreader mt-0.5 text-[14px] leading-[1.55] text-body-muted">
+                          {m.note}
+                        </div>
                       )}
                     </li>
                   ))}

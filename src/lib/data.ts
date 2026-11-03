@@ -102,7 +102,7 @@ export interface CurriculumWeek {
   title: string;
   summary: string;
   // Add { label, url } entries as materials go online.
-  materials: { label: string; url: string; time?: string; optional?: boolean }[];
+  materials: { label: string; url: string; time?: string; optional?: boolean; note?: string }[];
 }
 
 export const curriculum: CurriculumWeek[] = [
@@ -157,6 +157,92 @@ export const curriculum: CurriculumWeek[] = [
       { label: "Hado van Hasselt — Introduction to Reinforcement Learning (watch 2:00–1:02:10)", url: "https://www.youtube.com/watch?v=TCCjZe0y4Qc&t=2m0s", time: "60 min", optional: true },
       { label: "Andrej Karpathy — The Spelled-Out Intro to Neural Networks and Backpropagation: Building Micrograd", url: "https://youtu.be/VMj-3S1tku0", time: "150 min", optional: true },
       { label: "Brandon Rohrer — Transformers from Scratch", url: "https://e2eml.school/transformers.html", optional: true },
+    ],
+  },
+  {
+    title: "Week 5",
+    // TODO: confirm the week number, title and summary.
+    summary:
+      "An introduction to mechanistic interpretability: why understanding the inside of models matters, the circuits and features view of neural networks, superposition, and sparse autoencoders, through to tracing how Claude computes its answers.",
+    materials: [
+      {
+        label: "Amodei — The Urgency of Interpretability",
+        url: "https://www.darioamodei.com/post/the-urgency-of-interpretability",
+        note: "The opening; “The Dangers of Ignorance” through its third paragraph; “The Utility of Interpretability”; “What We Can Do” through “tip the scales”; then footnotes 2 and 8.",
+      },
+      {
+        label: "Olah et al. — Zoom In: An Introduction to Circuits",
+        url: "https://distill.pub/2020/circuits/zoom-in/",
+        note: "The opening of “Claim 1: Features” through its first paragraph; “Polysemantic Neurons”; the opening statement of “Claim 2: Circuits”; and “Circuit 3: Cars in Superposition”.",
+      },
+      {
+        label: "Alexander — God Help Us, Let’s Try To Understand AI Monosemanticity",
+        url: "https://www.astralcodexten.com/p/god-help-us-lets-try-to-understand",
+        note: "From “Inside Every AI Is A Bigger AI, Trying To Get Out” through “God From The Machine”; stop before “I Have Seen The Soul Of The AI”.",
+      },
+      {
+        label: "3Blue1Brown — How might LLMs store facts",
+        url: "https://www.3blue1brown.com/lessons/mlp",
+        note: "Written lesson: the “Superposition” and “A Quick Demo” sections, then “Additional Resources”.",
+      },
+      {
+        label: "Karvonen — An Intuitive Explanation of Sparse Autoencoders for LLM Interpretability",
+        url: "https://adamkarvonen.github.io/machine_learning/2024/06/11/sae-intuitions.html",
+        note: "From “Challenges with interpretability” through “Challenges with Sparse Autoencoder Evaluations”; skip the code. The matrix-dimension paragraph, the reference-implementation paragraph and the 2024 update are optional.",
+      },
+      {
+        label: "Anthropic — Mapping the Mind of a Large Language Model",
+        url: "https://www.anthropic.com/research/mapping-mind-language-model",
+        note: "From “We successfully extracted millions of features” through the Golden Gate Bridge feature; then from “Importantly, we can also manipulate these features” to “There’s much more to be done”. The paragraph on hoped-for uses is optional.",
+      },
+      {
+        label: "Anthropic — Tracing the Thoughts of a Large Language Model",
+        url: "https://www.anthropic.com/research/tracing-thoughts-language-model",
+        note: "The opening through “worthy of our trust”; “Does Claude plan its rhymes?”; then “Are Claude’s explanations always faithful?” and “Multi-step reasoning”. The multilingual and mental-math sections are optional.",
+      },
+    ],
+  },
+  {
+    title: "Week 6",
+    // TODO: confirm the week number, title and summary.
+    summary:
+      "What interpretability can and can’t do for catching deception: the case that it won’t reliably find deceptive AI, a pragmatic research agenda, and recent work on persona vectors, probes, natural language autoencoders and evaluation awareness.",
+    materials: [
+      {
+        label: "Nanda — Interpretability Will Not Reliably Find Deceptive AI",
+        url: "https://www.lesswrong.com/posts/PwnadG4BFjaER3MGf/interpretability-will-not-reliably-find-deceptive-ai",
+        note: "From the TL;DR through “The Role of Interpretability”. “High Reliability Seems Unattainable,” the points other than “How to prove a negative” in “Why Won’t Interpretability be Reliable?”, and the black-box section are optional.",
+      },
+      {
+        label: "Nanda et al. — A Pragmatic Vision for Interpretability",
+        url: "https://www.lesswrong.com/posts/StENzDcD3kpfGJssR/a-pragmatic-vision-for-interpretability",
+        note: "“Executive Summary” through “Motivating Example: Steering Against Evaluation Awareness”; then “Reflections On The Field’s Progress” through “Case Study: Sparse Autoencoders”.",
+      },
+      {
+        label: "Anthropic — Persona Vectors: Monitoring and Controlling Character Traits in Language Models",
+        url: "https://www.anthropic.com/research/persona-vectors",
+        note: "Full post, up to the short conclusion.",
+      },
+      {
+        label: "Smith, Chughtai, and Nanda — Difficulties with Evaluating a Deception Detector for AIs",
+        url: "https://www.lesswrong.com/posts/zmngpxsvGbotFeQca/paper-difficulties-with-evaluating-a-deception-detector-for",
+        note: "Alignment Forum summary: the abstract; then from “Several recent works” through Workaround 5, including the three-problems figure.",
+      },
+      {
+        label: "Hollinsworth et al. — Telling FIBS: Probes Effectively Detect Sabotage and Catch Unverbalized Deception",
+        url: "https://arxiv.org/abs/2610.12445",
+        note: "Version 3: Abstract and Figure 1 through the opening paragraph of Section 4.4, skipping the passages marked optional in the packet; Section 5.2 from “hidden-goal-organisms” through “Limitations on model organisms”; Section 6 “Limitations” and “Recommendations”.",
+      },
+      {
+        label: "Anthropic — Natural Language Autoencoders: Turning Claude’s Thoughts into Text",
+        url: "https://www.anthropic.com/research/natural-language-autoencoders",
+        note: "“What is a natural language autoencoder?” through the end of “Understanding what Claude thinks but doesn’t say”; the first two paragraphs of “The future of NLAs” and their figure. “Discovering hidden motivations” is optional.",
+      },
+      {
+        label: "Hua et al. — Steering Evaluation-Aware Language Models to Act Like They Are Deployed",
+        url: "https://arxiv.org/pdf/2510.20487",
+        note: "Figure 1; Section 1 through the paragraph beginning “Our results suggest”; Section 6 “Limitations”.",
+      },
     ],
   },
 ];
