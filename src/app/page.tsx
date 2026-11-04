@@ -1,6 +1,6 @@
 import { NavBar } from "@/components/NavBar";
 import { Hero } from "@/components/Hero";
-import { NotesAndSemester } from "@/components/NotesAndSemester";
+import { WhyWeExist } from "@/components/WhyWeExist";
 import { GeneralMeetings } from "@/components/GeneralMeetings";
 import { Fellowships } from "@/components/Fellowships";
 import { Organizers } from "@/components/Organizers";
@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-1 flex-col">
       <NavBar />
       <Hero />
-      <NotesAndSemester />
+      <WhyWeExist />
       <GeneralMeetings />
       <Fellowships />
       <Organizers />
