@@ -38,7 +38,7 @@ export function Organizers() {
                   <div className="font-newsreader mt-4 text-[15.5px] leading-[1.3] font-medium text-ink">
                     {organizer.name}
                   </div>
-                  <div className="font-chivo-mono mt-[3px] text-[12px] leading-[1.4] text-label-muted">
+                  <div className="font-newsreader mt-[3px] text-[14.5px] leading-[1.4] text-body-muted">
                     {roleLines.map((line, index) => (
                       <div key={index} className={line === "" ? "min-h-[1.4em]" : undefined}>
                         {line}

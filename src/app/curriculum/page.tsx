@@ -4,7 +4,7 @@ import { Footer } from "@/components/Footer";
 import { curriculum } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Open Curriculum · Austin AI Alignment",
+  title: "Open Curriculum | Austin AI Alignment",
   description:
     "The full Austin AI Alignment Technical AI Safety curriculum, open source and free for anyone to use.",
 };
@@ -14,9 +14,6 @@ export default function CurriculumPage() {
     <div className="flex flex-1 flex-col">
       <NavBar />
       <main className="mx-auto w-full max-w-[1180px] flex-1 px-6 py-14 sm:px-14">
-        <div className="font-chivo-mono mb-5 text-[10.5px] leading-none font-medium tracking-[.14em] text-label-muted">
-          OPEN CURRICULUM
-        </div>
         <h1 className="font-newsreader mb-5 text-[38px] leading-[1.15] font-medium text-ink">
           Technical AI Safety Curriculum
         </h1>
@@ -50,8 +47,8 @@ export default function CurriculumPage() {
                         {m.label}
                       </a>
                       {(m.time || m.optional) && (
-                        <span className="font-chivo-mono ml-2 text-[11px] tracking-[.06em] text-label-muted">
-                          {[m.optional && "OPTIONAL", m.time].filter(Boolean).join(" · ")}
+                        <span className="font-newsreader ml-2 text-[14px] text-label-muted">
+                          ({[m.optional && "optional", m.time].filter(Boolean).join(", ")})
                         </span>
                       )}
                       {m.note && (
