@@ -23,7 +23,7 @@ export function RotatingWord() {
     <>
       {/* readable single word for assistive tech; the cycling display below is aria-hidden */}
       <span className="sr-only">{WORDS[0]}</span>
-      <span aria-hidden="true" className="relative inline-grid text-tint-eyebrow">
+      <span aria-hidden="true" className="relative inline-grid justify-items-center text-tint-eyebrow">
         <span className="invisible col-start-1 row-start-1">{LONGEST_WORD}</span>
         {WORDS.map((word, i) => (
           <span
