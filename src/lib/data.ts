@@ -98,6 +98,10 @@ export const slackInviteUrl = "https://join.slack.com/t/austinaialignment/shared
 
 export const blogUrl = "https://austinaialignment.substack.com/";
 
+export const instagramUrl = "https://www.instagram.com/austinaialignment/";
+
+export const linkedinUrl = "https://www.linkedin.com/company/austin-ai-alignment/";
+
 export interface CurriculumWeek {
   title: string;
   summary: string;
