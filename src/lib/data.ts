@@ -249,4 +249,65 @@ export const curriculum: CurriculumWeek[] = [
       },
     ],
   },
+  {
+    title: "Week 7",
+    // TODO: confirm the week number, title and summary.
+    summary:
+      "AI control: deploying powerful models so that the risk of serious harm stays low even if they are misaligned and trying to cause it. The case for control, how control protocols work for coding tasks and multi-step agents, an outside audit and a real incident from OpenAI’s internal agent monitoring, chain-of-thought monitoring, and a critique of the control agenda.",
+    materials: [
+      {
+        label: "The case for ensuring that powerful AIs are controlled (Greenblatt and Shlegeris)",
+        url: "https://www.lesswrong.com/posts/kcKrE9mzEHrdqtDpE/the-case-for-ensuring-that-powerful-ais-are-controlled",
+        note: "The opening through “Catching AIs red-handed”; “The control property” through “Control evaluations and black-box techniques”; the start of “Control is likely achievable for early transformatively useful AIs” through “Our basic argument is…”; then “‘Transformatively useful’ probably doesn’t imply ‘uncontrollable’” through the end of “Without qualitatively wildly superhuman skills in problematic domains, evading careful control is probably difficult”.",
+      },
+      {
+        label: "AI Control: Improving Safety Despite Intentional Subversion (Shlegeris, Roger, Greenblatt, and Sachan)",
+        url: "https://www.lesswrong.com/posts/d9FJHawgkiMSPjagR/ai-control-improving-safety-despite-intentional-subversion",
+        note: "The authors’ summary: “Paper summary” through the protocol table.",
+      },
+      {
+        label: "Ctrl-Z: Controlling AI Agents via Resampling (Bhatt, Shlegeris, Kaufman, and Tracy)",
+        url: "https://www.lesswrong.com/posts/LPHMMMZFAWog6ty5x/ctrl-z-controlling-ai-agents-via-resampling",
+        note: "The authors’ summary: from “The Multi-Step Control Problem” through “Value of Information”. The “time travel” paragraph is optional.",
+      },
+      {
+        label: "Red-Teaming OpenAI’s Internal Agent Monitoring Systems (Redwood Research and METR)",
+        url: "https://blog.redwoodresearch.org/p/red-teaming-openais-internal-agent",
+        note: "The post through “We have not evaluated these claims,” with footnotes 4–6. The design ideals are optional.",
+      },
+      {
+        label: "Suppressing misalignment monitoring alerts and disabling misalignment monitoring (OpenAI misalignment report)",
+        url: "https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/",
+        note: "Summary; the October 6 incident, using the plain-language translations of the model’s reasoning; “Investigation and response”.",
+      },
+      {
+        label: "Detecting misbehavior in frontier reasoning models (OpenAI)",
+        url: "https://openai.com/index/chain-of-thought-monitoring/",
+        note: "From “Humans often find and exploit loopholes” through the reward-hacking examples; then “Our monitor is far more effective…” through the recommendation. The two concluding example transcripts are optional.",
+      },
+      {
+        label: "Monitoring Reasoning Models for Misbehavior and the Risks of Promoting Obfuscation (Baker et al.)",
+        url: "https://arxiv.org/abs/2503.11926",
+        note: "Figure 4 only, to read alongside the OpenAI post above.",
+      },
+      {
+        label: "The Case Against AI Control Research (Wentworth)",
+        url: "https://www.lesswrong.com/posts/8wBN8cdNAv3c7vt6p/the-case-against-ai-control-research",
+        note: "From “The AI Control Agenda, in its own words” through the first two paragraphs of “The Median Doom-Path: Slop, not Scheming,” ending “it’s already too late”.",
+      },
+    ],
+  },
+  {
+    title: "Week 8",
+    // TODO: confirm the week number, title and summary.
+    summary:
+      "AI strategy, policy, and careers: how technical safety agendas turn into institutional strategy and policy decisions during a rapid AI transition, and where each fellow might help. The week is built around AI 2040: Plan A, read as a scenario to scrutinize rather than a forecast, and connects takeoff, misalignment, interpretability, control, and oversight to what evidence it would take to justify moving from controlled use of powerful AI to genuine trust.",
+    materials: [
+      {
+        label: "AI 2040: Plan A",
+        url: "https://ai-2040.com/AI-2040.pdf",
+        note: "In three parts. Part 1: the Foreword through the end of “2029: Choose a Path” (pp. 2–9), with Appendix A, “Incremental AI Policy Wishlist” (pp. 42–43). Part 2: “2030: Plan A is Established” through the end of “2031: Safety Cases” (pp. 9–16), then Appendix L, “Flawed safety case is approved” (pp. 57–58). Part 3: “2032: Controlled Explosive Growth” through the end of “2035: Pause at Top Expert AI” (pp. 16–24), then Appendix W, “Why alignment isn’t solved enough to relax control” (pp. 69–70). Read the main text; the margin notes and the rest of the report are optional.",
+      },
+    ],
+  },
 ];
