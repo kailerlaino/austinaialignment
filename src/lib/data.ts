@@ -308,6 +308,11 @@ export const curriculum: CurriculumWeek[] = [
         url: "https://ai-2040.com/AI-2040.pdf",
         note: "In three parts. Part 1: the Foreword through the end of “2029: Choose a Path” (pp. 2–9), with Appendix A, “Incremental AI Policy Wishlist” (pp. 42–43). Part 2: “2030: Plan A is Established” through the end of “2031: Safety Cases” (pp. 9–16), then Appendix L, “Flawed safety case is approved” (pp. 57–58). Part 3: “2032: Controlled Explosive Growth” through the end of “2035: Pause at Top Expert AI” (pp. 16–24), then Appendix W, “Why alignment isn’t solved enough to relax control” (pp. 69–70). Read the main text; the margin notes and the rest of the report are optional.",
       },
+      { label: "International AI Safety Report 2026: Executive Summary", url: "https://internationalaisafetyreport.org/publication/2026-report-executive-summary", optional: true },
+      { label: "Safety Cases: A Scalable Approach to Frontier AI Safety (Hilton, Davidsen Buhl, Korbak, and Irving)", url: "https://arxiv.org/abs/2503.04744", optional: true },
+      { label: "Responsible Scaling Policy, Version 3.4 (Anthropic)", url: "https://www.anthropic.com/responsible-scaling-policy", optional: true },
+      { label: "What Should Companies Share about Risks from Frontier AI Models? (METR)", url: "https://metr.org/blog/2025-06-27-risk-transparency/", optional: true },
+      { label: "What AI Companies Can Do Today to Help with the Most Important Century (Karnofsky)", url: "https://www.cold-takes.com/what-ai-companies-can-do-today-to-help-with-the-most-important-century/", optional: true },
     ],
   },
 ];
